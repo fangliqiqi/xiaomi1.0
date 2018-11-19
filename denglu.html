@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>小米账号-登录</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/denglustyle.css">
+</head>
+<body>
+<!-- 第一部分头部logo -->
+	<div class="head">
+		<div class="content">
+			<a href="index.html"></a>
+		</div>	
+	</div>
+<!-- 第二部分 背景 -->
+	<div class="box">
+		<div class="content content2">
+			<!-- 表单 -->
+			<form action="" class='form'>
+				<div class="box_a">
+					<h3 class='active'>账号登录</h3>
+					<h3>扫码登录</h3>
+				</div>
+				<div class="box_b">
+					<div class="box_ca" style='display: block'>
+						<div class="box_ca1">
+							<input type="text" placeholder="邮箱/手机号码/小米ID">
+							<input type="password" placeholder="密码">
+							<a href="index.html" >
+								<input type="button" value="登录">
+							</a>
+							<p>
+								<a href="">手机短信登录/注册</a>
+								<span>
+									<a href="">立即注册</a>
+									<i>|</i>
+									<a href="">忘记密码</a>
+								</span>
+							</p>
+						</div>
+						<!-- 其他方式登录 -->
+						<div class="box_ca2">
+							<p class='pa'>其他方式登录</p>
+							<div class="box_ca3">
+								<a href=""><i></i></a>
+								<a href=""><i></i></a>
+								<a href=""><i></i></a>
+								<a href=""><i></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="box_ca box_cab">
+						<div class="box_ca4"><img src="images/xz.png" alt=""></div>
+						<p>使用<span>小米商城APP</span>扫一扫</p>
+						<p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+<!-- 尾部 -->
+	<div class="foot">
+		<div class="foot_a">
+			<ul>
+				<li><a href="">简体</a>|</li>
+				<li><a href="">繁体</a>|</li>
+				<li><a href="">English</a>|</li>
+				<li><a href="">常见问题</a>|</li>
+				<li><a href="">隐私政策</a></li>
+			</ul>
+		</div>
+		<div class="foot_b">
+			<p>小米公司版权所有-京ICP备10046444-</p>
+			<p><a href=""><img src="images/ghs.png" alt="">京公网安备11010802020134号</a></p>
+			<p>-京ICP证110507号</p>
+		</div>
+	</div>
+
+
+
+	<!-- 登录 js部分 选项卡 -->
+	<script>
+	 var oBoxa = document.getElementsByClassName('box_a')[0];
+	 var oh3 = oBoxa.getElementsByTagName('h3');
+	 var oBoxc = document.getElementsByClassName('box_ca');
+	 for(var i= 0;i<oh3.length;i++){
+	 	oh3[i].index=i;
+	 	oh3[i].onclick=function(){
+	 		for(var j = 0;j<oBoxc.length;j++){
+	 			oh3[j].className='';
+	 			oBoxc[j].style.display='none';
+	 		}
+	 		oh3[this.index].className='active';
+	 		oBoxc[this.index].style.display='block';
+	 	}
+	 }
+	</script>
+</body>
+</html>
