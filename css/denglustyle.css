@@ -1,0 +1,276 @@
+
+/*第一部分*/
+.head{
+	width:100%;
+	height:98px;
+}
+.content{
+	width:1130px;
+	height:100%;
+	margin:0px auto;
+}
+.content>a{
+	display: block;
+	width:200px;
+	height:98px;
+	background: url(../images/mistore_logo.png) no-repeat;
+}
+/*第二部分*/
+.box{
+	width:100%;
+	height:588px;
+	background: url(../images/aa715cc549de90403cd098018f07e012.jpg) no-repeat;
+	background-position: top center;
+}
+
+.box .content2{
+	position: relative;
+}
+/*}表单*/
+.form{
+	display: block;
+	width:410px;
+	height:525px;
+	background: #fff;
+	position: absolute;
+	right:0px;
+	bottom:30px;
+	z-index: 100;
+}
+.box_a{
+	width:100%;
+	height:82px;
+	padding: 27px 0px;
+	line-height: 82px;
+}
+.box_a h3{
+	float:left;
+	width: 50%;
+	height:28px;
+	line-height: 28px;
+	text-align: center;
+	font-size: 24px;
+	color:#757575;
+	border-left: 2px solid #e0e0e0;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.box_a .active{
+	color:#ff6700;
+}
+.box_a h3:first-child{
+	border:0px;
+}
+.box_b{
+	width:100%;
+	height:443px;
+	position: relative;
+}
+.box_ca{
+	width:100%;
+	height:100%;
+	padding: 0px 31px;
+	position: absolute;
+	left:0px;
+	top:0px;
+	display: none;
+}
+.box_ca1{
+	width:100%;
+	height:225px;
+}
+.box_ca1  input{
+	display: block;
+	width:100%;
+	height:50px;
+	padding: 13px 12px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 15px;
+	color:#333;
+	font-size: 14px;
+}
+.box_ca1 input:first-child{
+	margin-top: 0px;
+}
+.box_ca1>a{
+	display: block;
+	width:100%;
+	height:50px;
+	margin-top: 25px;
+
+}
+.box_ca1 input:last-child{
+	background: #ff6700;
+	outline: 0;
+	border:0px;
+	color:#fff;
+	text-align: center;
+	cursor: pointer;
+}
+.box_ca1 p{
+	width:100%;
+	height:35px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.box_ca1>p>a{
+	font-size: 13px;
+	color:#ff6700;
+}
+.box_ca1 p span a{
+	font-size: 13px;
+	color:#999;
+}
+.box_ca1 p span i{
+	color:#999;
+}
+.box_ca1 p span a:hover{
+	color:#ff6700;
+}
+/*其他方式登录*/
+.box_ca2{
+	width:100%;
+	height:65px;
+	/*background: red; */
+	margin-top: 125px;
+}
+.pa{
+	font-size:14px;
+	color:#bbb;
+	text-align: center;
+	position: relative;
+}
+.pa:before{
+	display: block;
+	content: '';
+	width:130px;
+	height:1px;
+	background: #bbb;
+	position: absolute;
+	left:0px;
+	top:10px;
+}
+.pa:after{
+	display: block;
+	content: '';
+	width:130px;
+	height:1px;
+	background: #bbb;
+	position: absolute;
+	right:0px;
+	top:10px;
+}
+.box_ca3{
+	width:100%;
+	height: 30px;
+	margin-top: 13px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.box_ca3 a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:30px;
+	height: 30px;
+	border-radius: 50%;
+	margin:0px 17px;
+	background: #0288d1;
+}
+.box_ca3 a i{
+	display: block;
+	width:18px;
+	height:18px;
+	background: url(../images/icons_type.png) no-repeat;
+	background-position:-19px -2px;
+}
+.box_ca3 a:nth-child(2){
+	background: #d32f2f;	
+}
+.box_ca3 a:nth-child(2) i{
+	background: url(../images/icons_type.png) no-repeat;
+	background-position:-38px -2px;
+}
+.box_ca3 a:nth-child(3){
+	background: #0ae;	
+}
+.box_ca3 a:nth-child(3) i{
+	width:27px;
+	height:27px;
+	background: url(../images/icons_type.png) no-repeat;
+	background-position:-56px 2px;
+}
+.box_ca3 a:nth-child(4){
+	background: #00d20d;	
+}
+.box_ca3 a:nth-child(4) i{
+	width:30px;
+	height:30px;
+	background: url(../images/icons_type.png) no-repeat;
+	background-position:-81px 6px;
+}
+.box_ca4{
+	width:100%;
+	height:300px;
+	text-align: center;
+	line-height: 300px;
+	padding: 115px 0px;
+}
+.box_ca4>img{
+	width:180px;
+	height:180px;
+}
+.box_cab p{
+	width:100%;
+	text-align: center;
+	line-height: 22px;
+	font-size:14px;
+	color:#757575;
+}
+.box_cab p span{
+	color:#ff6700;
+	padding: 0px 5px;
+}
+/*尾部*/
+.foot{
+	width:100%;
+	height:80px;
+	margin-top: 70px;
+	text-align: center;
+}
+.foot_a{
+	width:100%;
+	height:35px;
+}
+.foot_a ul{
+	width:100%;
+	height:100%;
+	line-height: 35px;
+	text-align: center;
+}
+.foot_a ul li{
+	display: inline-block;
+}
+.foot_a ul li a{
+	padding: 0px 10px;
+	font-size:14px;
+	color:#757575;
+}
+.foot_a ul li:first-child a{
+	color:#333;
+}
+.foot_b{
+	width:100%;
+	text-align: center;
+}
+.foot_b p{
+	display: inline-block;
+	font-size:14px;
+	color:#757575;
+}
+.foot_b p a{
+	color:#757575;
+}

@@ -1,0 +1,1428 @@
+/*顶部*/
+.top{
+	width:100%;
+	height: 40px;
+	line-height: 40px;
+	background: #333;
+	font-size:12px;
+}
+.top a{
+	color:#b0b0b0;
+}
+.container{
+	width:1226px;
+	margin: 0px auto;
+	height:100%;
+	text-align: center;
+}
+.h_left{
+	float:left;
+} 
+.h_left a:hover{
+	color:#fff;
+}
+.h_left .app{
+	position: relative;
+}
+.box{
+	width:125px;
+	position:absolute;
+	z-index:999;
+	left:-70%;
+	top:27px;
+	background: #fff;
+	box-shadow: rgb(170, 170, 170) 0px 1px 5px;
+	padding: 15px 14px;
+	text-align: center;
+	display: none;
+}
+.box:after{
+	display: block;
+	position: absolute;
+	content: '';
+	border:10px solid transparent;
+	border-bottom: 10px solid #fff;
+	left:50px;
+	top:-20px;
+}
+.box img{
+	width:90px;
+	height:90px;
+	vertical-align: middle;
+}
+.box i{
+	font-style: normal;
+	font-size:14px;
+	color: #333;
+	display: block;
+	height:30px;
+	line-height:30px;
+}
+.h_left .app:hover .box{
+	display: block;
+}
+
+.h_left span{
+	color: #424242;
+} 
+.h_right{
+	float:right;
+}
+.gwc{
+	display: inline-block;
+	width:120px;
+	height:40px;
+	margin-left:20px;
+	line-height: 40px;
+	position: relative;
+}
+.gwc a{
+	display: inline-block;
+	width:120px;
+	height:40px;
+	line-height: 40px;
+	background:#424242;
+	color:#b0b0b0;
+	text-align: center;
+	transition: 0.1s;
+}
+.gwc:hover a{
+	background: #fff;
+	color:#ff6700;
+}
+.gwc i{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	background: url(../images/gwc.png) no-repeat;
+	background-size:100% 100%;
+	vertical-align: middle;
+}
+.gwc span{
+	font-weight: 600;
+}
+.gwc:hover i{
+	background: #fff;
+	background: url(../images/gwc_b.png) no-repeat;
+	background-size:100% 100%;
+}
+.yc{
+	width:315px;
+	height:0px;
+	line-height: 99px;
+	background: #fff;
+	color:#424242;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+	position: absolute;
+	right:0px;
+	top:40px;
+	z-index: 3;
+	text-align:center;
+	overflow: hidden;						/*高度0，里面的内容隐藏 overfl：hidden;*/ 
+	transition: 0.1s;
+}
+.gwc:hover .yc{
+	height:99px;
+}
+
+/*头部导航*/
+.header{
+	width:100%;
+	height:100px;
+	line-height: 100px;
+	position: relative;
+}
+.header a{
+	font-size:16px;
+	color:#333;
+}
+.container_b{
+	width:1226px;
+	height:100%;
+	position: relative;
+	margin:0px auto;
+}
+.logo{
+	width:55px;
+	height:55px;
+	position: absolute;
+	left:0;
+	top:22.5px;
+	background: #ff6700;
+	text-align: center;
+}
+.ll{
+	width:165px;
+	height:100px;
+	position: absolute;
+	left:70px;
+	top:0;
+}
+.ll img{
+	vertical-align: middle;
+}
+.chanpin{
+	position: absolute;
+	left:240px;
+}
+.ul1{
+	width:100%;
+	height:100%;
+}
+.ul1 li{
+	float:left;
+	padding: 0 10px;
+	box-sizing:border-box;
+}
+.ul1 li a:hover{
+	color:#ff6700;
+}
+
+/*头部菜单隐藏区域*/
+#caidan{
+	position:absolute;
+	top:100px;
+	left:0;
+	width:100%;
+	height:0px;
+	overflow: hidden;
+	box-sizing: border-box;
+	z-index: 999;
+	background: #fff;
+	transition: all 0.3s;
+}
+.cdactive{							/*classname   阴影 线*/
+	border-top:1px solid #e0e0e0;
+	box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+	box-sizing: border-box;
+}
+.ul2{
+	width:1226px;
+	height:100%;
+	position: relative;
+	margin:0px auto;
+}
+.ul2 li{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	opacity: 0;
+}
+.ul2 li div{
+	width:204px;
+	height:100%;
+	text-align: center;
+
+	float:left;
+	position: relative;
+}
+.ul2 li div p{
+	width:65px;
+	height:22px;
+	line-height: 22px;
+	text-align: center;
+	border:1px solid #ff6700;
+	font-size: 14px;
+	color:#ff6700;
+	position: absolute;
+	top:0;
+	left:70px;
+}
+.a1{
+	display: block;
+	width:203px;
+	height:120px;
+	text-align: center;
+	margin-top: 40px;
+}
+.a1 img{
+	width:160px;
+	height:110px;	
+}
+.ul2 li div .a2{
+	display: block;
+	width:100%;
+	line-height:20px;
+	font-size: 14px;
+
+}
+.ul2 li div i{
+	font-style:normal;
+	display: block;
+	line-height: 20px;
+	font-size: 12px;
+	color: #ff6700;
+}
+.ul2 li div>span{
+	display: block;
+	width:1px;
+	height:105px;
+	background:#b0b0b0;
+	position: absolute;
+	top:40px;
+	right:0px;
+}
+/*头部搜索栏*/
+.form{
+	width:295px;
+	height:50px;
+	position: absolute;
+	top:25px;
+	right:0;
+}
+.form>input{
+	width:247px;
+	height:48px;
+	border:none;
+	outline: none;
+	border:1px solid #b0b0b0;
+	padding:0 15px;
+	float:left;
+	box-sizing: border-box;
+}
+/*.itactive{
+	border-color:;
+}*/
+.sub{
+	width:48px;
+	height:48px;
+	border:1px solid #b0b0b0;
+	border-left:0;
+	position: absolute;
+	right:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sub i{
+	font-size: 28px;
+}
+.sub:hover{
+	background: #ff6700;
+}
+.sub:hover i{
+	color:#fff;
+}
+.tag{
+	height:18px;
+	line-height: 18px;
+	position: absolute;
+	top:16px;
+	right:61px;
+}
+.tag a{
+	padding: 1px 3px;
+	font-size: 12px;
+	background: #eeeeee;
+	margin-left: 5px;
+}
+.tag a:hover{
+	background: #ff6700;
+}
+.form ul{
+	width:245px;
+	border:1px solid #ff6700;
+	border-top:0px;
+	position: absolute;
+	top:48px;
+	left:0px;
+	display: none; 
+	z-index: 100;
+	background: #fff;
+}
+.form ul li{
+	width:100%;
+	height:25px;
+	line-height: 25px;
+	padding:0 20px; 
+	box-sizing: border-box;
+}
+.form ul li:hover{
+	background: #fafafa;
+}
+.form>ul>li>a{
+	font-size:12px;
+}
+.lia{
+	float:left;
+	width:79%;
+}
+.form>ul>li .lib{
+	float:right;
+	color:#b0b0b0;
+}
+/*小米8 导航*/
+.mi_nav{
+	width:100%;
+	height:65px;
+	line-height: 65px;
+	background: #fff;
+	border-top:1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.07);
+}
+.mi_left{
+	width:400px;
+	height:100%;
+	float:left;
+	line-height: 65px;
+} 
+.mi_left li{
+	float:left;
+} 
+.mi_left li span{
+	font-size: 18px;
+	color:#212121;
+}
+.mi_nav i{
+	padding: 0px 6px;
+	color:#e0e0e0;
+}
+.mi_left li a{
+	font-size:13px; 
+	color:#616161;
+}
+.mi_nav a:hover{
+	color:#ff6700;
+}
+.mi_right{
+	float:right;
+	height:100%;
+}
+.mi_right li{
+	float: left;
+}
+.mi_right li a{
+	font-size: 14px;
+	color:#616161;
+}
+.mi_right li:first-child a{
+	color:#ff6700;
+}
+.mi_right li:last-child a{
+	display: block;
+	width:118px;
+	height:28px;
+	line-height: 28px;
+	text-align: center;
+	background: #ff6700;
+	color:#fff;
+	margin-top:19px;
+	margin-left: 10px;
+}
+/*小米 8  头部背景*/
+.mi_bg{
+	width:100%;
+	height:1025px;
+	position: relative;
+}
+.bg_ul1{
+	width:100%;
+	height:100%;
+	position: relative;
+}
+.bg_ul1 li{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background: url(../images/index1.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: 0;
+	transition: all 1s;
+}
+.bg_div1{
+	width:100%;
+	height:100%;
+	padding-top: 85px;
+	position: absolute;
+	left:0px;
+	top:0px;
+	z-index: 5;
+	text-align: center;
+	color:#fff;
+}
+.bg_div1 img{
+	width:175px;
+	height:60px;
+}
+.bg_div1 h5{
+	font-size:17px;
+	line-height: 25px;
+}
+.bg_p1{
+	font-size: 14px;
+	line-height: 25px;
+}
+.bg_p1 i{
+	padding: 0px 8px;
+}
+.bg_p2{
+	line-height: 25px;
+	margin-top: 25px;
+}
+.bg_p2 sup{
+	font-size: 32px;
+}
+.bg_p2 span{
+	font-size: 40px;
+}
+.bg_p2 i{
+	font-size: 18px;
+	font-style: normal;
+}
+.bg_ul1 li:nth-child(2){
+	background: url(../images/index2.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.bg_ul1 li:nth-child(3){
+	background: url(../images/index3.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.bg_div2{
+	color:#111;
+}
+.bg_ul2{
+	position: absolute;
+	bottom: 25px;
+	left:0px;
+	text-align: center;
+	width:100%;
+	z-index: 10;
+}
+.bg_ul2 li{
+	display: inline-block;
+	width:35px;
+	height:3px;
+	background:#cdcdcd;
+	margin-left:5px;
+	cursor:pointer;
+}
+.bg_ul2 .bgactive{
+	background: #FFF;
+}
+/*小米8 介绍排列 */
+.box1{
+	width:100%;
+	height:500px;
+}
+.container_c{
+	width:1400px;
+	height:100%;
+	margin:0px auto;
+}
+.box1 ul{
+	width:100%;
+	height:100%;
+	padding: 60px 0px;
+	box-sizing: border-box;
+}
+.box1 ul li{
+	width:25%;
+	height:33.33%;
+	float:left;
+	border-right:1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 35px 0px;
+}
+.box1 ul li h6{
+	font-size:22px;
+	color:#111111;
+	line-height: 25px;
+}
+.box1 ul li p{
+	font-size:16px;
+	color:#6d6d6d;
+	line-height: 25px;
+}
+.box1 ul .li4{
+	border-right:0px;
+}
+.box1 ul .li9{
+	border-bottom:0px;
+}
+/*第二部分介绍 超轻四曲面轮播图*/
+.box2{
+	width:100%;
+	height:1015px;
+	position: relative;
+}
+.box2_ul1{
+	width:100%;
+	height:100%;
+	position: relative;
+}
+.box2_ul1 li{
+	position: absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	background: url(../images/border1.jpg) no-repeat;
+	background-position: center;
+	background-size:cover;
+	opacity: 0;
+	transition: all 1s;
+}
+.uli_div{
+	width:100%;
+	/*height:250px;*/
+	position: absolute;
+	left:0px;
+	top:0px;
+	z-index: 100;
+	padding-top: 90px;
+	color:#fff;
+	text-align: center;
+}
+.uli_div h2{
+	font-size:45px;
+	line-height: 55px;
+}
+.uli_div p{
+	font-size: 16px;
+	line-height: 25px;
+	margin-top: 20px;
+}
+.uli_div2{
+	color:#333;
+}
+.box2_ul1 li:nth-child(2){
+	background: url(../images/border2.jpg) no-repeat;
+	background-position: center;
+	background-size:cover;
+}
+.box2_ul1 li:nth-child(3){
+	background: url(../images/border3.jpg) no-repeat;
+	background-position: center;
+	background-size:cover;
+}
+.box2_ul1 li:nth-child(4){
+	background: url(../images/border4.jpg) no-repeat;
+	background-position: center;
+	background-size:cover;
+}
+.box2_ul2{
+	position: absolute;
+	bottom: 25px;
+	left:0px;
+	text-align: center;
+	width:100%;
+	z-index: 10;
+}
+.box2_ul2 li{
+	display: inline-block;
+	width:35px;
+	height:3px;
+	background:#cdcdcd;
+	margin-left:5px;
+	cursor:pointer;
+}
+.box2_ul2 .active{
+	background:#fff;
+}
+.gopre{
+	display: inline-block;
+	width:17px;
+	height:38px;
+	position: absolute;
+	left:20px;
+	top:500px;
+	background: url(../images/pre.png) no-repeat center;
+	cursor: pointer;
+}
+.gonext{
+	display: inline-block;
+	width:17px;
+	height:38px;
+	position: absolute;
+	right:20px;
+	top:500px;
+	background: url(../images/next.png) no-repeat center;
+	cursor: pointer;
+}
+/*第三部分介绍 屏幕 */
+.box3{
+	width:100%;
+	height:1038px;
+	background: url(../images/screen.jpg) no-repeat center;
+	background-size: cover;
+	position: relative;
+} 
+.box3_div{
+	width:100%;
+	padding-top:90px;
+	text-align: center;
+	color:#fff;
+	font-weight: 700;
+}
+.box3_div h2{
+	font-size:45px;
+	line-height: 55px;
+}
+.box3_div p{
+	font-size: 16px;
+	line-height:25px;
+	margin-top: 20px;
+}
+.box3_ul{
+	margin-top:100px;
+}
+.box3_ul li{
+	display: inline-block;
+	margin:0px 20px; 
+}
+.box3_ul li span{
+	display: block;
+	font-size: 30px;
+}
+.box3_ul li i{
+	font-style: normal;
+	color:#979797;
+	font-size:12px;
+	display: block;
+	padding-top: 10px;
+}
+.beizhu{
+	font-size: 14px;
+	color:#9b9b9b;
+	text-align: right;
+	position: absolute;
+	bottom: 20px;
+	right:10px;
+}
+/*第四部分介绍 定位*/
+.box4{
+	width:100%;
+	height: 1038px;
+	background: url(../images/gps.jpg) no-repeat center;
+	background-size: cover;
+}
+.box3_divb{
+	color:#111111;
+}
+/*第五部分介绍 相机*/
+.box5{
+	width:100%;
+	height:1038px;
+	background: url(../images/camera.jpg) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+.bix5_span{
+	display: inline-block;
+	width:140px;
+	height:60px;
+	background: url(../images/camera-icon.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	right:75px;
+	top:135px;	
+}
+.box5_ul{
+	display: inline-block;
+	width:1120px;
+	height:100px;
+	margin: 70px auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.box5_ul li{
+	width:25%;
+	height:50px;
+}
+.box5_ul li img{
+	width:41px;
+	height:42px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.box5_ul li span{
+	font-size: 13px;
+	color:#111;
+}
+/*小米8 AI变焦双摄拍摄 轮播图*/
+.ai{
+	width:100%;
+	height:627px;
+	margin-top:75px;
+	position: relative;
+	overflow: hidden;
+}
+.ai_ul1{
+	width:6790px;
+	height:530px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	transition: all 0.5s;
+}
+.ai_ul1 li{
+	margin:0px 10px;
+	width:950px;
+	height:530px; 
+	float:left;
+}
+.ai_ul1 li img{
+	width:100%;
+	height:100%;
+	float:left;
+}
+.ai_ul2{
+	width:100%;
+	text-align: center;
+	height:20px;
+	line-height: 20px;
+	position: absolute;
+	bottom: 50px;
+	left:0px;
+}
+	
+.ai_ul2 li{
+	display: inline-block;
+	width:30px;
+	height:3px;
+	background:#cdcdcd;
+	margin-left:5px;
+	cursor:pointer;
+}
+.ai_ul2 .active{
+	background:#000;
+}
+.ai_pre{
+	display: inline-block;
+	width:17px;
+	height:38px;
+	position: absolute;
+	left:20px;
+	top:250px;
+	background: url(../images/pre.png) no-repeat center;
+	cursor: pointer;
+}
+.ai_nest{
+	display: inline-block;
+	width:17px;
+	height:38px;
+	position: absolute;
+	right:20px;
+	top:250px;
+	background: url(../images/next.png) no-repeat center;
+	cursor: pointer;
+}
+.ai_p{
+	width:100%;
+	text-align: center;
+	font-size: 16px;
+	line-height: 16px;
+	color:#333;
+	position: absolute;
+	bottom:5px;
+}
+/*小米8 光效 轮播图*/
+.guangxiao{
+	width:100%;
+	height:1200px;
+	position: relative;
+	overflow: hidden;
+}
+.gx_div{
+	width:800px;
+	height:80px;
+	margin:130px auto;
+	text-align: center;
+}
+.gx_div h3{
+	width:50%;
+	float:left;
+	font-size: 33px;
+	line-height: 40px;
+	color:#333;
+	text-align: left;
+}
+.gx_div p{
+	width:50%;
+	text-align: left;
+	float:right;
+	float:right;
+	font-size: 18px;
+	line-height: 25px;
+	color:#333;
+}
+
+.gx_ul1{
+	width:1226px;
+	height:885px;
+	margin:80px auto;
+	position: relative;
+}
+.gx_ul1 li{
+	position: absolute;
+	left:0px;
+	top:0px;
+	text-align: center;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.gx_ul1 li img{
+	width:1226px;
+	height:720px;
+}
+.gx_ul1 li h5{
+	font-size: 22px;
+	color:#333;
+	line-height: 25px;
+	margin-top: 30px;
+}
+.gx_ul1 li p{
+	font-size: 16px;
+	color:#333;
+	line-height: 16px;
+	margin-top: 10px;
+}
+.gx_ul2{
+	width:100%;
+	height:20px;
+	line-height: 20px;
+	text-align: center;
+	position: absolute;
+	bottom:5px;
+}
+.gx_ul2 li{
+	display: inline-block;
+	width:30px;
+	height:3px;
+	background:#cdcdcd;
+	margin-left:5px;
+	cursor:pointer; 
+}
+.gx_ul2 .gxactive{
+	background: #111;
+}
+.gx_pre{
+	display: inline-block;
+	width:17px;
+	height:38px;
+	position: absolute;
+	left:280px;
+	top:680px;
+	background: url(../images/pre.png) no-repeat center;
+	cursor: pointer;
+}
+.gx_next{
+	display: inline-block;
+	width:17px;
+	height:38px;
+	position: absolute;
+	right:280px;
+	top:680px;
+	background: url(../images/next.png) no-repeat center;
+	cursor: pointer;
+}
+/*.小米8 短视频*/
+.video{
+	width:100%;
+	height:860px;
+}
+.rideo_box{
+	margin-top: 80px;
+	width:100%;
+	height:653px;
+	background: url(../images/hand.png) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+.rideo_box>img{
+	width:695px;
+	height:336px;
+	position: absolute;
+	top:60px;
+	left:605px;
+	border-radius: 27px;
+}
+.rideo_box i{
+	display: block;
+	width:695px;
+	height:336px;
+	position: absolute;
+	top:60px;
+	left:605px;
+	border-radius: 27px;
+	background: rgba(0,0,0,0.5);
+}
+.rideo_box>span{
+	display: inline-block;
+	width:65px;
+	height:65px;
+	background: url(../images/play.png) no-repeat center;
+	position: absolute;
+	top:175px;
+	left:48%;
+}
+.redeo_ul{
+	position: absolute;
+	bottom: 100px;
+	left:0px;
+	width:100%;
+	height:65px;
+	line-height: 65px;
+	text-align: center;
+}
+.redeo_ul li{
+	display: inline-block;
+	margin:0px 20px;
+	width:40px;
+	height:100%;
+	text-align: center;
+}
+.redeo_ul li>img{
+	width:40px;
+	height:40px;
+	display: block;
+	margin:0px auto;
+}
+.redeo_ul li p{
+	font-size: 14px;
+	color:#111;
+	line-height: 15px;
+	margin-top: 5px;
+}
+/*.AI 场景相机*/
+.changjiang{
+	width:100%;
+	height:1000px;
+}
+.gx_divb{
+	margin-top: 0px;
+	padding-top:50px;
+	height:180px;
+}
+.cj_ul{
+	width:100%;
+	height:735px;
+	margin-top: 30px;
+	text-align: center;
+}
+.cj_ul li{
+	width:352px;
+	height:648px;
+	display: inline-block;
+	margin:0px 40px;
+	text-align: center;
+	color:#333;
+}
+.cj_ul li img{
+	width:278px;
+	height:569px;
+}
+.cj_ul li p{
+	font-size: 17px;
+	line-height: 17px;
+	margin-top: 30px;
+}
+.cj_ul li span{
+	font-size: 15px;
+	line-height: 30px;
+}
+/*美颜相机*/
+.meiyan{
+	width:100%;
+	height:1095px;
+	background: url(../images/ai.jpg) no-repeat center;
+	background-size: cover;
+}
+/*微整形  美颜相机*/
+.wei{
+	width:100%;
+	height:850px;
+	padding: 60px 0px;
+}
+.wei_left{
+	width:49.5%;
+	height:100%;
+	padding: 235px 0px;
+	float:left;
+	text-align: center;
+	color:#333;
+	margin-right:1%;
+}
+.wei_left h4{
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: 700;
+}
+.wei_p{
+	font-size: 17px;
+	line-height: 25px;
+}
+.wei_left img{
+	margin-top: 55px;
+	width:450px;
+	height: 67px;
+}
+.wei_right{
+	width:49.5%;
+	height:100%;
+	float:right;
+	position: relative;
+	background: url(../images/aibeauty.jpg) no-repeat ;
+	background-position: center;
+	background-size:cover;
+}
+.wei_right p{
+	width:100%;
+	font-size: 12px;
+	color:#9b9b9b;
+	line-height: 15px;
+	position: absolute;
+	bottom: 10px;
+	left:0px;
+	text-align: center;
+}
+/*小米 跑分*/
+.paofen{
+	width:100%;
+	height:1020px;
+	background: url(../images/cpu.jpg) no-repeat center;
+	background-position: cover;
+}
+ /*小米 红外人脸识别*/
+ .hong{
+ 	width:100%;
+ 	height:1025px;
+ 	background: url(../images/infrared.jpg) no-repeat center;
+ 	background-position: cover;
+ }
+ .box3_div .hp{
+ 	font-size: 20px;
+ }
+ /*小爱同学  语音助手*/
+.yuyin{
+	width:100%;
+	height:550px;
+	padding-top:60px;
+}
+.yyleft{
+	width:49.5%;
+	height:100%;
+	background: url(../images/xiaoai.jpg) no-repeat center;
+	background-size:cover;
+	float:left;
+	margin-right:1%;
+}
+.yyright{
+	width:49.5%;
+	height:100%;
+	padding: 235px 0px;
+	float:left;
+	text-align: center;
+	color:#333;
+}
+.yyright h4{
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: 700;
+}
+.yyright p{
+	font-size: 20px;
+	line-height: 25px;
+}
+/*多功能NFC*/
+.nfc{
+	width:100%;
+	height:550px;
+	padding-bottom: 60px;
+}
+.nfcleft{
+	float:left;
+	width:49.5%;
+	height:100%;
+	padding: 235px 0px;
+	float:left;
+	text-align: center;
+	color:#333;
+	margin-right:1%;
+}
+.nfcleft h4{
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: 700;
+}
+.nfcleft p{
+	font-size: 20px;
+	line-height: 25px;
+}
+.nfcright{
+	float:right;
+	width:49.5%;
+	height:100%;
+	background: url(../images/nfc.jpg) no-repeat center;
+	background-size: cover;
+}
+.jixu{
+	display: block;
+	width:100%;
+	height:300px;
+	background: url(../images/footer.jpg) no-repeat center;
+	background-size: cover;
+	line-height: 300px;
+}
+.jixu span{
+	display: inline-block;
+	font-size: 25px;
+	line-height: 25px;
+	color:#fff;
+	margin-left:25%;
+}
+/*数据说明*/
+.shuju{
+	width:100%;
+	height:525px;
+	padding: 65px 0px 55px;
+	background: #f5f5f5;
+}
+.sj{
+	width:100%;
+	padding: 0px 54px;
+	text-align: left;
+}
+.sj>p{
+	font-size: 13px;
+	color:#ccc;
+	line-height: 18px;
+}
+.gzh{
+	width:100%;
+	height:100px;
+	line-height: 100px;
+	margin-top: 90px;
+}
+.gzh_box{
+	display: inline-block;
+	width:50%;
+	height: 100%;
+	float:left;
+	text-align: left;
+}
+.gzh_box img{
+	width:100px;
+	height:100px;
+	margin:0px 35px;
+	float:left;
+	vertical-align: middle;
+}
+.gzh_box2{
+	display: inline-block;
+	height:100px;
+	line-height: 100px;
+	float:left;
+	padding: 20px 0px;
+}
+.gzh_p1{
+	font-size: 28px;
+	line-height: 36px;
+	color:#333;
+
+}
+.gzh_p1 span{
+	color:#ff6700;
+}
+.gzh_p2{
+	font-size: 14px;
+	color:#333;
+	line-height: 28px;
+}
+/*第十五部分  联系信息*/
+/*.fifteen{
+	width:100%;
+	height:800px;
+	background: #fff;
+}*/
+.weixiu{
+	width:100%;
+	height:80px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.weixiu ul{
+	width:100%;
+	height:100%;
+	padding: 27px 0px;
+}
+.weixiu ul li{
+	float:left;
+	width:20%;
+	height:25px;
+	border-right:1px solid #e0e0e0;
+	box-sizing: border-box;
+}
+.weixiu ul li a{
+	color:#616161;
+	transition: all 0.2s;
+}
+.weixiu ul li a:hover{
+	color:#ff6700;
+}
+.weixiu ul li a i{
+	font-size:25px;
+	vertical-align: middle;
+}
+.weixiu ul li:nth-child(5){
+	border-right: 0px;
+}
+.bzzx{
+	height:192px;
+	width:100%;
+	padding: 40px 0;
+}
+.bangzhu{
+	width:80%;
+	height:100%;
+	float:left;
+}
+.bz{
+	width:16.6%;
+	height:100%;
+	float:left;
+	text-align: left;
+}
+.zx_a{
+	width:100%;
+	margin-bottom: 25px;
+	font-size:15px;
+	color:#424242;
+}
+.zx_b{
+	font-size:12px;
+	line-height: 25px;
+}
+.zx_b a{
+	color:#757574;
+}
+.zx_b a:hover{
+	color:#ff6700;
+}
+.kefu{
+	width:20%;
+	height:100%;
+	border-left:1px solid #e0e0e0;
+	box-sizing: border-box;
+	float: right;
+}
+.kefu p{
+	color:#ff6700;
+	font-size:22px;
+}
+.kefu span{
+	display: block;
+	font-size:12px;
+	color:#616161;
+	line-height: 23px;
+}
+.kefu a{
+	display: block;
+	width:120px;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	border:1px solid #ff6700;
+	font-size:14px;
+	margin:15px auto;
+	color:#ff6700;
+	transition: all 0.2s;
+}
+.kefu a i{
+	font-size:13px;
+	margin-right: 2px;
+}
+.kefu a:hover{
+	background: #ff6700;
+	color:#fff;
+}
+/*第十六部分   尾部*/
+.sixteenth{
+	width:100%;
+	height:215px;
+	padding: 30px 0;
+	background-color:#f5f5f5;
+}
+.footer{
+	width:100%;
+	height:104px;
+	overflow: hidden;
+}
+.f_logo{
+	width:57px;
+	height:57px;
+	float:left;
+}
+.f_logo img{
+	width:100%;
+	height:100%;
+}
+.ft_ul{
+	float:left;
+	margin-left: 7px;
+}
+.ft_ul li{
+	float:left;
+	line-height: 18px;	
+}
+.ft_ul li a{
+	font-size: 12px;
+	color:#757575;
+	padding:0 7px; 
+}
+.ft_ul li a:hover{
+	color:#ff6700;
+}
+.ft_ul li span{
+	color:#b0b0b0;
+}
+
+.ft_p{
+	float:left;
+	width:660px;
+	line-height: 19px;
+	font-size:12px;
+	color:#b0b0b0;
+	margin-left: 10px;
+	text-align: left;
+}
+.ft_p a{
+	color:#b0b0b0;
+}
+.ft_right{
+	float:right;
+	line-height: 120px;
+
+}
+.ft_right a{
+	display: inline-block;
+	width:85px;
+	height:28px;
+	line-height: 28px;
+
+}
+.ft_right a:first-child{
+	width:90px;
+}
+.ft_right a img{
+	width:100%;
+	height: 100%;
+}
+.ft_bg{
+	width:267px;
+	height:19px;
+	margin:30px auto 0;
+	background: url(../images/slogan2016.png) center center;
+}
+
